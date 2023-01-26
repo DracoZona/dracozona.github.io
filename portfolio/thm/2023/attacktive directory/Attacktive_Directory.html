@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>DracoZona Official</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../../../../assets/img/favicon.png" rel="icon">
+  <link href="../../../../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../../../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../../../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="../../../../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../../../../assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="../../../../assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="../../../../assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../../../../assets/css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="../../../../assets/img/profile-img.png" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="../../../../index.html">Draco Zona</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://twitter.com/JazFur" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.facebook.com/dracozona00" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com/jayvee_marz/" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/jaspervan-m/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+      <nav class="nav-menu">
+        <ul>
+          <li class="active"><a href="../../../../index.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li class="active"><a href="#"><i class="bx bx-arrow-back"></i> <span>Portfolio List</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+      <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>TryHackMe - Attacktive Directory</h2>
+          <ol>
+            <li><a href="../../../../index.html">Portfolio</a></li>
+            <li>TryHackMe</li>
+            <li>Attacktive Directory</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="portfolio-details-container">
+
+          <div class="owl-carousel portfolio-details-carousel">
+            <img src="../../../../assets/img/p-images/Attacktive Directory.png" class="img-fluid" alt="">
+          </div>
+
+        </div>
+
+        <div class="portfolio-description">
+          <h2>Machine Information</h2>
+          <ul>
+            <li><strong>Platform:</strong> TryHackMe</li>
+            <li><strong>Machine Name:</strong> Attacktive Directory</li>
+          </ul>
+        </div>
+
+        <div class="portfolio-description">
+          <h1>Setup</h1>
+          <p>Impacket Installation:</p>
+          <img src="images/01.png" target="_blank" class="img-fluid" alt="">
+          <p></p>
+          <img src="images/02.png" target="_blank" class="img-fluid" alt="">
+          <p></p>
+          <p>Bloodhound installation:</p>
+          <img src="images/03.png" target="_blank" class="img-fluid" alt="">
+        </div>
+
+        <div class="portfolio-description">
+          <h1>Enumeration</h1>
+          <p>First, I scanned the IP with nmap and here are the results</p>
+          <img src="images/04.png" target="_blank" class="img-fluid" alt="">
+
+          <p></p>
+          <p>Next, I have installed a tool called "Kerbrute" to be used for enumarating Users via Kerberos</p>
+          <img src="images/05.png" target="_blank" class="img-fluid" alt="">
+          <p></p>
+          <p>Afterwards, I made the file an executable file. "chmod +x kerbrute_linux_amd64"</p>
+          <img src="images/06.png" target="_blank" class="img-fluid" alt="">
+          <p></p>
+          <p>I have downloaded both the userlist and paswwordlists text files from the provided link on the machine.</p>
+          <img src="images/07.png" target="_blank" class="img-fluid" alt="">
+          <p></p>
+          <p>Next, I used the help command to check the available commands of the kerbrute tool.</p>
+          <img src="images/08.png" target="_blank" class="img-fluid" alt="">
+          <p></p>
+          <p>Using kerbrute, I have enumerated the username of the domain using the userlist wordlist I have downloaded from the previous step. "./kerbrute_linux_amd64 userenum --dc=10.10.179.196
+            -d=spookysec.local. userlist.txt"
+          </p>
+          <img src="images/09.png" target="_blank" class="img-fluid" alt="">
+        </div>
+
+        <div class="portfolio-description">
+          <h1>Exploitation</h1>
+          <p>Now, in the exploitation, I have created a file called validusers.txt where I put the valid usernames I have enumerated from the enumeration phase then uses impacket GetNPUsers.py
+            to check which user doesn't need a password to query a ticket.
+          </p>
+          <img src="images/10.png" target="_blank" class="img-fluid" alt="">
+          <p></p>
+          <p>Next, there is a hash from the result, I have created a file named "hash.txt" and inserted the hash inside it.</p>
+          <img src="images/11.png" target="_blank" class="img-fluid" alt="">
+          <p></p>
+          <p>Using a tool called "hashcat", I cracked the hash with a mode of 18200 (Kerberos 5, etype 23, AS-REP) </p>
+          <img src="images/12.png" target="_blank" class="img-fluid" alt="">
+        </div>
+
+        <div class="portfolio-description">
+          <h1>Enumeration 2</h1>
+          <p>Next part is I used smbclient to list all the SMB shared folders. "smblcient -L 10.10.179.196 -U "svc-admin"</p>
+          <img src="images/13.png" target="_blank" class="img-fluid" alt="">
+          <p></p>
+          <p>Now the backup folder is our target. I tried accessing the backup folder and listed the files inside the directory and I have successfully found "backup_credentials.txt"</p>
+          <img src="images/14.png" target="_blank" class="img-fluid" alt="">
+          <p></p>
+          <p>with the use of "get" command, I downloaded the file and opened it using cat command in my machine.</p>
+          <img src="images/15.png" target="_blank" class="img-fluid" alt="">
+          <p></p>
+          <p>It seems that it is a base64 encoded text. Hence, I have used an online base64 decoder. This tool is what I casually use. https://www.base64decode.org/</p>
+          <img src="images/16.png" target="_blank" class="img-fluid" alt="">
+        </div>
+
+        <div class="portfolio-description">
+          <h1>Privilege Escalation</h1>
+          <p>Using secretdumps.py from impacket, I have dump the users and password (in hashes) of the credentials from the backup domain.</p>
+          <img src="images/17.png" target="_blank" class="img-fluid" alt="">
+          <p></p>
+          <p>Using the tool evil-winrm, I have established a connection to the admin account without the need to crack the password hash.</p>
+          <img src="images/18.png" target="_blank" class="img-fluid" alt="">
+          <p></p>
+          <p>The next thing to do is to find the 3 flags. User Flag, Root Flag, and PrivEsc Flag.</p>
+          <p>Since I was already in the Administrator folder I changed the directory to Desktop to check if there are files there.</p>
+          <img src="images/19.png" target="_blank" class="img-fluid" alt="">
+          <p>And TADA! The root flag was there!</p>
+          <p>Now, I have to hunt the user flag. I changed the folder from Administrator to svc-admin since that is the target user and proceed to the Desktop folder of user "svc-admin". There I found the user.txt flag</p>
+          <img src="images/20.png" target="_blank" class="img-fluid" alt="">
+          <p></p>
+          <p>Last flag left is the PrivEsc Flag. I changed the directory to backup user and proceed to its Desktop folder. There I found the PrivEsc.txt flag.</p>
+          <img src="images/21.png" target="_blank" class="img-fluid" alt="">
+          <p></p>
+          <h3>Thank you for reading my documentation / write up.</h3>
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Draco Zona 
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../../../../assets/vendor/jquery/jquery.min.js"></script>
+  <script src="../../../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../../../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="../../../../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../../../../assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="../../../../assets/vendor/counterup/counterup.min.js"></script>
+  <script src="../../../../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../../../../assets/vendor/venobox/venobox.min.js"></script>
+  <script src="../../../../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="../../../../assets/vendor/typed.js/typed.min.js"></script>
+  <script src="../../../../assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../../../../assets/js/main.js"></script>
+
+</body>
+
+</html>
