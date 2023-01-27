@@ -244,13 +244,7 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 3px solid #149ddd;
 }
 
-@media (min-width: 1024px) {
-  #hero {
-    background-attachment: stretch;
-  }
-}
-
-@media (max-width: 1440px) {
+@media (max-width: 1600px) {
   #hero h1 {
     margin-left: 50px;
     font-size: 48px;
@@ -263,6 +257,13 @@ h1, h2, h3, h4, h5, h6 {
   }
   #hero p{
     margin-left: 50px;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: stretch;
   }
 }
 
